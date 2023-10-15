@@ -16,8 +16,7 @@ if (
 usernameInput.value === correctUsername &&
 passwordInput.value === correctPassword
 ) {
-    alert (1);
-window.location.href = "https://sherinthomas03.github.io/gptcv/openproject/GPTCV/index.html";
+window.location.href = "openproject/GPTCV/index.html";
 }
 else {
 alert("Incorrect username or password. Please try again.");
