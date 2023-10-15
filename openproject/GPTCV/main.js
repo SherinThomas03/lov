@@ -1,4 +1,4 @@
-//for harmburger :-)
+
 const hamburger = document.querySelector(".hamburgermenu");
 const navMenu = document.querySelector(".navigation-menu");
 
