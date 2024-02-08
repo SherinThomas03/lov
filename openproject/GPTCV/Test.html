@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Story</title>
+  <link rel="stylesheet" href="styles.css">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parallax {
+  background-image: url('background.jpg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  color: white;
+}
+
+.content {
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+}
+
+.container p {
+  line-height: 1.6;
+}
+
+</style>
+</head>
+<body>
+  <div class="parallax">
+    <div class="header">
+      <h1>Our Love Story</h1>
+    </div>
+  </div>
+
+  <div class="content">
+    <section id="section1">
+      <div class="container">
+        <h2>How We Met</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis mauris a libero commodo tempus.</p>
+      </div>
+    </section>
+    <section id="section2">
+      <div class="container">
+        <h2>Our Adventures</h2>
+        <p>Nulla ac faucibus ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+      </div>
+    </section>
+    <section id="section3">
+      <div class="container">
+        <h2>Memorable Moments</h2>
+        <p>Proin vehicula augue non sem tincidunt, quis malesuada mauris vehicula.</p>
+      </div>
+    </section>
+    <section id="section4">
+      <div class="container">
+        <h2>Our Future Together</h2>
+        <p>Suspendisse potenti. Proin sed justo at libero efficitur scelerisque.</p>
+      </div>
+    </section>
+  </div>
+<script>
+window.addEventListener('scroll', function() {
+  const parallax = document.querySelector('.parallax');
+  let scrollPosition = window.pageYOffset;
+
+  parallax.style.backgroundPositionY = scrollPosition * 0.7 + 'px';
+});
+
+</script>
+  <script src="script.js"></script>
+</body>
+</html>
